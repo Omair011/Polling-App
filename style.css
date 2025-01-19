@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #f4f4f4;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#poll-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.poll-item {
+  padding: 10px;
+  margin: 10px 0;
+  background: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Corner Polls Styling */
+#corner-polls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#corner-polls h2 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+#corner-polls .poll-item {
+  padding: 8px;
+  margin: 5px 0;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root"></div>
+  <h1>Polling Application</h1>
+  
+  <!-- Create Poll Section -->
+  <section id="create-poll">
+    <h2>Create a New Poll</h2>
+    <form id="poll-form">
+      <input type="text" id="poll-title" placeholder="Enter poll title" required />
+      <div id="options-container">
+        <input type="text" class="poll-option" placeholder="Option 1" required />
+        <input type="text" class="poll-option" placeholder="Option 2" required />
+      </div>
+      <button type="button" id="add-option">Add Option</button>
+      <button type="submit">Create Poll</button>
+    </form>
+  </section>
+
+  <!-- Available Polls Section -->
+  <section id="poll-list">
+    <h2>Available Polls</h2>
+    <ul id="polls"></ul>
+  </section>
+
+  <!-- Poll Results Section -->
+  <section id="poll-results">
+    <h2>Poll Results</h2>
+    <div id="results"></div>
+  </section>
+
+  <!-- Fixed Corner Polls -->
+  <div id="corner-polls"></div>
+
+  <script src="config.js"></script>
+</body>
+</html>
